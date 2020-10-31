@@ -45,7 +45,7 @@ if op==1:
         os.execl(python, python, * sys.argv)
         
     if op2==3:
-        Hydra=subprocess.call(["git clone https://github.com/Gameye98/Black-Hydra && mv black-hydra /data/data/com.termux/files/home ","-la"],shell=True)
+        Hydra=subprocess.call(["git clone https://github.com/Gameye98/Black-Hydra && mv Black-Hydra /data/data/com.termux/files/home ","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -101,7 +101,7 @@ if op==2:
         os.execl(python, python, * sys.argv)
         
     if op3==5:
-        redh=subprocess.call(["git clone https://github.com/Tuhinshubhra/RED_HAWK&& mv RED_HAWK /data/data/com.termux/files/home ","-la"],shell=True)
+        redh=subprocess.call(["git clone https://github.com/Tuhinshubhra/RED_HAWK && mv RED_HAWK /data/data/com.termux/files/home ","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -137,7 +137,7 @@ if op==3:
         os.execl(python, python, * sys.argv)
         
     if op4==2:
-        br=subprocess.call(["git clonehttps://github.com/BRDumps/wordlists  && mv BRDumps /data/data/com.termux/files/home","-la"],shell=True)
+        br=subprocess.call(["git clone https://github.com/BRDumps/wordlists  && mv wordlists /data/data/com.termux/files/home","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)

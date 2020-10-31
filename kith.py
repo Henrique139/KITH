@@ -1,4 +1,4 @@
-#===========HENERIQUE==========#
+#===========HENRIQUE=============#
 
 #Importações
 import sys

@@ -200,7 +200,7 @@ if op==5:
         os.execl(python, python, * sys.argv)
         
     if op6==2:
-        kali=subprocess.call(["pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh && mv kali.sh /data/data/com.termux/files/home", "-la"], shell=True)
+        kali=subprocess.call(["pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh && mv kali.sh /data/data/com.termux/files/home && mv kali-blinds /data/data/com.termux/files/home && mv kali-fs /data/data/com.termux/files/home && mv start-kali.sh /data/data/com.termux/files/home ", "-la"], shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)

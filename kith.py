@@ -33,25 +33,25 @@ if op==1:
 #Downloads feitos de acordo com a opção selecionada    
 
     if op2==1:
-        facebookbrute=subprocess.call(["git clone https://github.com/Cesar-Hacker/facebook-brute", "-la"], shell=True)
+        facebookbrute=subprocess.call(["git clone https://github.com/Cesar-Hacker/facebook-brute && mv facebook-brute /data/data/com.termux/files/home" , "-la"], shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op2==2:
-        hashbuster=subprocess.call(["git clone https://github.com/s0md3v/Hash-Buster","-la"],shell=True)
+        hashbuster=subprocess.call(["git clone https://github.com/s0md3v/Hash-Buster && mv Hash-Buster /data/data/com.termux/files/home","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op2==3:
-        Hydra=subprocess.call(["git clone https://github.com/Gameye98/Black-Hydra","-la"],shell=True)
+        Hydra=subprocess.call(["git clone https://github.com/Gameye98/Black-Hydra && mv black-hydra /data/data/com.termux/files/home ","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op2==4:
-        insta=subprocess.call(["git clone https://github.com/fuck3erboy/instahack","-la"],shell=True)
+        insta=subprocess.call(["git clone https://github.com/fuck3erboy/instahack && mv instahack /data/data/com.termux/files/home ","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -77,37 +77,37 @@ if op==2:
 #Downloads feitos de acordo com a opção selecionada 
    
     if op3==1:
-        nmap=subprocess.call(["git clone https://github.com/nmap/nmap","-la"],shell=True)
+        nmap=subprocess.call(["git clone https://github.com/nmap/nmap && mv nmap /data/data/com.termux/files/home","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op3==2:
-         router=subprocess.call(["git clone https://github.com/threat9/routersploit","-la"],shell=True)
+         router=subprocess.call(["git clone https://github.com/threat9/routersploit && mv routersploit /data/data/com.termux/files/home","-la"],shell=True)
          input("FERRAMENTA INSTALADA")
          python = sys.executable
          os.execl(python, python, * sys.argv)
         
     if op3==3:
-         sqlscan=subprocess.call(["git clone https://github.com/Pure-L0G1C/SQL-scanner","-la"],shell=True)
+         sqlscan=subprocess.call(["git clone https://github.com/Pure-L0G1C/SQL-scanner && mv SQL-scanner /data/data/com.termux/files/home","-la"],shell=True)
          input("FERRAMENTA INSTALADA")
          python = sys.executable
          os.execl(python, python, * sys.argv)
         
     if op3==4:
-        sqlmap=subprocess.call(["git clone https://github.com/sqlmapproject/sqlmap","-la"],shell=True)
+        sqlmap=subprocess.call(["git clone https://github.com/sqlmapproject/sqlmap && mv sqlmap /data/data/com.termux/files/home","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op3==5:
-        redh=subprocess.call(["git clone https://github.com/Tuhinshubhra/RED_HAWK","-la"],shell=True)
+        redh=subprocess.call(["git clone https://github.com/Tuhinshubhra/RED_HAWK&& mv RED_HAWK /data/data/com.termux/files/home ","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op3==6:
-        xat=subprocess.call(["git clone https://github.com/Moham3dRiahi/XAttacker","-la"],shell=True)
+        xat=subprocess.call(["git clone https://github.com/Moham3dRiahi/XAttacker && mv XAttacker /data/data/com.termux/files/home ","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -131,31 +131,31 @@ if op==3:
     op4=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
 #Downloads    
     if op4==1:
-        iw=subprocess.call(["git clone https://github.com/geovedi/indonesian-wordlist","-la"],shell=True)
+        iw=subprocess.call(["git clone https://github.com/geovedi/indonesian-wordlist && mv indonesian-wordlist /data/data/com.termux/files/home","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op4==2:
-        br=subprocess.call(["git clonehttps://github.com/BRDumps/wordlists" ,"-la"],shell=True)
+        br=subprocess.call(["git clonehttps://github.com/BRDumps/wordlists  && mv BRDumps /data/data/com.termux/files/home","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op4==3:
-        bd=subprocess.call(["git clone https://github.com/danieldonda/wordlist" ,"-la"],shell=True)
+        bd=subprocess.call(["git clone https://github.com/danieldonda/wordlist && mv wordlist /data/data/com.termux/files/home " ,"-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op4==4:
-        dw=subprocess.call(["git clone https://github.com/thoughtworks/dadoware" ,"-la"],shell=True)
+        dw=subprocess.call(["git clone https://github.com/thoughtworks/dadoware && mv dadoware /data/data/com.termux/files/home" ,"-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op4==5:
-       pw=subprocess.call(["git clone https://github.com/berzerk0/Probable-Wordlists" ,"-la"],shell=True)
+       pw=subprocess.call(["git clone https://github.com/berzerk0/Probable-Wordlists && mv Probable-Wordlists /data/data/com.termux/files/home" ,"-la"],shell=True)
        input("FERRAMENTA INSTALADA")
        python = sys.executable
        os.execl(python, python, * sys.argv)
@@ -170,23 +170,20 @@ if op==4:
       
     op5=int(input(" SELECIONE UMA OPÇÃO: "))
     if op5==1:
-        ss=subprocess.call(["git clone https://github.com/Cesar-Hack-Gray/SocialSploit" ,"-la"],shell=True)
+        ss=subprocess.call(["git clone https://github.com/Cesar-Hack-Gray/SocialSploit && mv SocialSploit /data/data/com.termux/files/home" ,"-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op5==2:
-        sf=subprocess.call(["git clone https://github.com/UndeadSec/SocialFis","-la"],shell=True)
+        sf=subprocess.call(["git clone https://github.com/UndeadSec/SocialFish && mv SocialFish /data/data/com.termux/files/home","-la"],shell=True)
     if op5==0:
         input("VOLTANDO...")
         python = sys.executable
-        os.execl(python, python, * sys.argv)
-        input("FERRAMENTA INSTALADA")
-        python = sys.executable
-        os.execl(python, python, * sys.argv)
+        os.execl(python, python, * sys.argv)      
         
     if op5==3:
-        ft=subprocess.call(["git clone https://github.com/Vairous7x/V7x-Fishing" ,"-la"],shell=True)
+        ft=subprocess.call(["git clone https://github.com/Vairous7x/V7x-Fishing && mv V7x-Fishing /data/data/com.termux/files/home " ,"-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -197,19 +194,19 @@ if op==5:
     op6=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
 #Downloads
     if op6==1:
-        ft=subprocess.call(["git clone https://github.com/PSecurity/ps.ngrok" ,"-la"],shell=True)
+        ft=subprocess.call(["git clone https://github.com/PSecurity/ps.ngrok && mv ps.ngrok /data/data/com.termux/files/home" ,"-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op6==2:
-        kali=subprocess.call(["pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh", "-la"], shell=True)
+        kali=subprocess.call(["pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh && mv kali.sh /data/data/com.termux/files/home", "-la"], shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
     if op6==3:
-        xampp=subprocess.call(["git clone https://github.com/xampp-phoenix/xampp" ,"-la"],shell=True)
+        xampp=subprocess.call(["git clone https://github.com/xampp-phoenix/xampp && mv xampp /data/data/com.termux/files/home  " ,"-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -235,4 +232,3 @@ else:
     python = sys.executable
     os.execl(python, python, * sys.argv)
   
- 

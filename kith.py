@@ -45,7 +45,7 @@ if op==1:
         os.execl(python, python, * sys.argv)
         
     if op2==3:
-        Hydra=subprocess.call(["git clone https://github.com/Gameye98/Black-Hydra && mv Black-Hydra /data/data/com.termux/files/home ","-la"],shell=True)
+        hydra=subprocess.call(["git clone https://github.com/Gameye98/Black-Hydra && mv Black-Hydra /data/data/com.termux/files/home","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)

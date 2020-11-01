@@ -231,4 +231,5 @@ else:
     print(" OPÇÃO INVÁLIDA")        
     python = sys.executable
     os.execl(python, python, * sys.argv)
+
   

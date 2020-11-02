@@ -6,7 +6,7 @@ import os
 import subprocess
 
 #Limpar a tela do terminal
-inicio=subprocess.call(["clear","-x"])
+inicio=subprocess.call(["clear","-x"],shell=True)
 vermelho="\033[1;31m"  
 #Título
 print(vermelho+"___________________________________________________________ ")

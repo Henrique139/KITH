@@ -26,7 +26,7 @@ op=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
 
 #Tela de download de ataque de senha
 if op==1:
-    print("\n"+" [1]-Facebook Brute"+"\n"+" [2]-Hash buster"+"\n"+" [3]-Black-Hydra"+"\n"+" [4]-Instahack"+"\n"+" [0]-Voltar")
+    print("\n"+" [1]-Facebook Brute"+"\n"+" [2]-Hash buster"+"\n"+" [3]-Black-Hydra"+"\n"+" [4]-Instahack"+"\n"+" [5]-ASU"+"\n"+" [0]-Voltar")
     
     op2=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
     
@@ -55,7 +55,13 @@ if op==1:
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
-        
+
+    if op2==5:
+        asu=subprocess.call(["git clone https://github.com/ASU-LAB/asu-v5 && mv asu-v5 /data/data/com.termux/files/home","-la"],shell=True)
+        input("FERRAMENTA INSTALADA")
+        python = sys.executable
+        os.execl(python, python, * sys.argv)
+                
 #Voltar        
     if op2==0:
         python = sys.executable
@@ -114,6 +120,9 @@ if op==2:
         
     if op3==7:
         meta=subprocess.call(["pkg install metasploit && mv metasploit /data/data/com.termux/files/home ","-la"],shell=True)
+        input("FERRAMENTA INSTALADA")
+        python = sys.executable
+        os.execl(python, python, * sys.argv)
         
 #Caso o usuário queira voltar   
     if op3==0:

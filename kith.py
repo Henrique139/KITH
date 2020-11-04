@@ -1,4 +1,4 @@
-#===========HENRIQUE=============#
+#===========HENERIQUE==========#
 
 #Importações
 import sys
@@ -45,7 +45,7 @@ if op==1:
         os.execl(python, python, * sys.argv)
         
     if op2==3:
-        hydra=subprocess.call(["git clone https://github.com/Gameye98/Black-Hydra && mv Black-Hydra /data/data/com.termux/files/home","-la"],shell=True)
+        Hydra=subprocess.call(["git clone https://github.com/Gameye98/Black-Hydra && mv Black-Hydra /data/data/com.termux/files/home ","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -70,7 +70,7 @@ if op==1:
 
 #Tela de download de análise de vulnerabilidade
 if op==2:
-    print("\n"+" [1]-Nmap"+"\n"+" [2]-Routersploit"+"\n"+" [3]-Sqlscan"+"\n"+" [4]-Sqlmap"+"\n"+" [5]-Red hawk"+"\n"+" [6]-XAttacker"+"\n"+" [0]-Voltar")
+    print("\n"+" [1]-Nmap"+"\n"+" [2]-Routersploit"+"\n"+" [3]-Sqlscan"+"\n"+" [4]-Sqlmap"+"\n"+" [5]-Red hawk"+"\n"+" [6]-XAttacker"+"\n"+" [7]-Metasploit"+"\n"+" [0]-Voltar")
     
     op3=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
     
@@ -101,7 +101,7 @@ if op==2:
         os.execl(python, python, * sys.argv)
         
     if op3==5:
-        redh=subprocess.call(["git clone https://github.com/Tuhinshubhra/RED_HAWK && mv RED_HAWK /data/data/com.termux/files/home ","-la"],shell=True)
+        redh=subprocess.call(["git clone https://github.com/Tuhinshubhra/RED_HAWK&& mv RED_HAWK /data/data/com.termux/files/home ","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -111,6 +111,9 @@ if op==2:
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
+        
+   if op3==7:
+        meta=subprocess.call(["pkg install metasploit && mv metasploit /data/data/com.termux/files/home ","-la"],shell=True)
         
 #Caso o usuário queira voltar   
     if op3==0:
@@ -137,7 +140,7 @@ if op==3:
         os.execl(python, python, * sys.argv)
         
     if op4==2:
-        br=subprocess.call(["git clone https://github.com/BRDumps/wordlists  && mv wordlists /data/data/com.termux/files/home","-la"],shell=True)
+        br=subprocess.call(["git clonehttps://github.com/BRDumps/wordlists  && mv BRDumps /data/data/com.termux/files/home","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -170,7 +173,7 @@ if op==4:
       
     op5=int(input(" SELECIONE UMA OPÇÃO: "))
     if op5==1:
-        ss=subprocess.call(["git clone https://github.com/Cesar-Hack-Gray/SocialSploit && mv SocialSploit /data/data/com.termux/files/home" ,"-la"],shell=True)
+        ss=subprocess.call(["git clone https://github.com/Cesar-Hack-Gray/SocialSploit && mv.SocialSploit /data/data/com.termux/files/home" ,"-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -200,7 +203,7 @@ if op==5:
         os.execl(python, python, * sys.argv)
         
     if op6==2:
-        kali=subprocess.call(["pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh && mv kali.sh /data/data/com.termux/files/home && mv kali-binds /data/data/com.termux/files/home && mv kali-fs /data/data/com.termux/files/home && mv start-kali.sh /data/data/com.termux/files/home", "-la"], shell=True)
+        kali=subprocess.call(["pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh && mv kali.sh /data/data/com.termux/files/home", "-la"], shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -231,5 +234,4 @@ else:
     print(" OPÇÃO INVÁLIDA")        
     python = sys.executable
     os.execl(python, python, * sys.argv)
-
   

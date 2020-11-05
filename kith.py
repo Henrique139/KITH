@@ -119,7 +119,7 @@ if op==2:
         os.execl(python, python, * sys.argv)
         
     if op3==7:
-        meta=subprocess.call(["pkg install metasploit && mv metasploit /data/data/com.termux/files/home ","-la"],shell=True)
+        meta=subprocess.call(["pkg install metasploit ","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)

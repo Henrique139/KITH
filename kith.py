@@ -1,4 +1,4 @@
-#===========HENERIQUE==========#
+#===========HENRIQUE==========#
 
 #Importações
 import sys
@@ -7,15 +7,11 @@ import subprocess
 
 #Limpar a tela do terminal
 inicio=subprocess.call(["clear","-x"],shell=True)
-vermelho="\033[1;31m"  
+azul="\033[1;34m"
 #Título
-print(vermelho+"___________________________________________________________ ")
-print("  | /   •   ___         |   |      __      ___    | /   ") 
-print("  《    |    |          |---|     /__\     |      《   ")
-print("  | \   |    |          |   |    /    \    |__    | \             ")
-print("___________________________________________________________  ")
+print(azul+"  _  __ _  _____"+"\n"+" / |/ // \/__ __\ "+"\n"+" |   / | |  / \ "+"\n"+" |   \ | |  | |"+"\n"+" \_|\_ \\_/  \_/ "+"\n"+"  _     ____  ____  _  __ _____ ____"+"\n"+" / \ /|/  _ \/   _\/ |/ //  __//  __\ "+"\n"+" | |_||| / \||  /  |   / |  \  |  \/|"+"\n"+" | | ||| |-|||  \__|   \ |  /_ |    / "+"\n"+" \_/\| \_/ \|\ ____/\_|\_\\____\ \_/\_\ ")
 
-print("   HENRIQUE CÉSAR,2020"+"\n")
+print("\n"+"   HENRIQUE CÉSAR,2020  v 1.2"+"\n")
 print("\n"+"  KIT DE HACKING INICIANTE PARA TERMUX"+"\n")
 
 #Tela inicial
@@ -26,7 +22,7 @@ op=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
 
 #Tela de download de ataque de senha
 if op==1:
-    print("\n"+" [1]-Facebook Brute"+"\n"+" [2]-Hash buster"+"\n"+" [3]-Black-Hydra"+"\n"+" [4]-Instahack"+"\n"+" [5]-ASU"+"\n"+" [0]-Voltar")
+    print("\n"+" [1]-Facebook Brute"+"\n"+" [2]-Hash buster"+"\n"+" [3]-Black-Hydra"+"\n"+" [4]-Instahack"+"\n"+" [5]-ASU"+"\n"+" [6]-Aircrack"+"\n"+" [0]-Voltar")
     
     op2=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
     
@@ -61,11 +57,18 @@ if op==1:
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
-                
+        
+    if op2==6:
+        air=subprocess.call(["git clone https://github.com/aircrack-ng/aircrack-ng && mv aircrack-ng /data/data/com.termux/files/home","-la"],shell=True)
+        input("FERRAMENTA INSTALADA")
+        python = sys.executable
+        os.execl(python, python, * sys.argv)
+        
 #Voltar        
     if op2==0:
         python = sys.executable
         os.execl(python, python, * sys.argv)
+        
 #Caso o usuário digite algo inválido        
 
     else:
@@ -119,7 +122,7 @@ if op==2:
         os.execl(python, python, * sys.argv)
         
     if op3==7:
-        meta=subprocess.call(["pkg install metasploit && mv metasploit /data/data/com.termux/files/home ","-la"],shell=True)
+        meta=subprocess.call(["pkg install metasploit ","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -206,8 +209,7 @@ if op==5:
     op6=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
 #Downloads
     if op6==1:
-        token=str(input(" DGITE SEU AUTHTOKEN: "))
-        ft=subprocess.call(["git clone https://github.com/PSecurity/ps.ngrok && mv ps.ngrok /data/data/com.termux/files/home && cd && cd ps.ngrok && chmod +x * && ./ngrok authtoken "+token+"&& mv ngrok /data/data/com.termux/files/home && cd && rm -rf ps.ngrok" ,"-la"],shell=True)
+        ft=subprocess.call(["git clone https://github.com/PSecurity/ps.ngrok && mv ps.ngrok /data/data/com.termux/files/home" ,"-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)

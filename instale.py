@@ -22,4 +22,4 @@ subprocess.call(["pkg install coreutils", "-la"], shell=True)
 
 subprocess.call(["apt install curl", "-la"], shell=True)
 
-print("ABRA O KITH COM " python kith.py" ")
+print("ABRA O KITH COM [ python kith.py ] ")

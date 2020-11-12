@@ -7,15 +7,15 @@ import subprocess
 
 #Limpar a tela do terminal
 inicio=subprocess.call(["clear","-x"],shell=True)
-azul="\033[1;34m"
+verde="\033[1;32m"
 #Título
-print(azul+"  _  __ _  _____"+"\n"+" / |/ // \/__ __\ "+"\n"+" |   / | |  / \ "+"\n"+" |   \ | |  | |"+"\n"+" \_|\_ \\_/  \_/ "+"\n"+"  _     ____  ____  _  __ _____ ____"+"\n"+" / \ /|/  _ \/   _\/ |/ //  __//  __\ "+"\n"+" | |_||| / \||  /  |   / |  \  |  \/|"+"\n"+" | | ||| |-|||  \__|   \ |  /_ |    / "+"\n"+" \_/\| \_/ \|\ ____/\_|\_\\____\ \_/\_\ ")
+print(verde+"  _  __ _  _____"+"\n"+" / |/ // \/__ __\ "+"\n"+" |   / | |  / \ "+"\n"+" |   \ | |  | |"+"\n"+" \_|\_ \\_/  \_/ "+"\n"+"  _     ____  ____  _  __ _____ ____"+"\n"+" / \ /|/  _ \/   _\/ |/ //  __//  __\ "+"\n"+" | |_||| / \||  /  |   / |  \  |  \/|"+"\n"+" | | ||| |-|||  \__|   \ |  /_ |    / "+"\n"+" \_/\| \_/ \|\ ____/\_|\_\\____\ \_/\_\ ")
 
 print("\n"+"   HENRIQUE CÉSAR,2020  v 1.2"+"\n")
 print("\n"+"  KIT DE HACKING INICIANTE PARA TERMUX"+"\n")
 
 #Tela inicial
-print(" [1]-Ataque de senha"+"\n"+" [2]-Análise de vulnerabilidade"+"\n"+" [3]-Wordlist"+"\n"+" [4]-Pishing"+"\n"+" [5]-Outros"+"\n"+" [0]-Sair")
+print(" [1]-Ataque de senha"+"\n"+" [2]-Análise de vulnerabilidade"+"\n"+" [3]-Wordlist"+"\n"+" [4]-Pishing"+"\n"+" [5]-Outros"+"\n"+" [6]-Entre em contato"+"\n"+" [0]-Sair")
 
 #Variável para redirecionar usuário
 op=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
@@ -141,7 +141,7 @@ if op==2:
         
 #Tela de wordlists        
 if op==3:
-    print("\n"+" [1]-Indonesian-wordlist"+"\n"+" [2]-Brdumps"+"\n"+" [3]-Banco de dados de senha"+"\n"+" [4]-Dadoware"+"\n"+" [5]-probable wordlist"+"\n"+" [0]-Voltar")
+    print("\n"+" [1]-Indonesian-wordlist"+"\n"+" [2]-Brdumps"+"\n"+" [3]-Banco de dados de senha"+"\n"+" [4]-Dadoware"+"\n"+" [5]-probable wordlist"+"\n"+" [6]-Crunch"+"\n"+" [0]-Voltar")
     
     op4=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
 #Downloads    
@@ -174,7 +174,12 @@ if op==3:
        input("FERRAMENTA INSTALADA")
        python = sys.executable
        os.execl(python, python, * sys.argv)
-        
+    if op4==6:
+        pw=subprocess.call(["git clone https://github.com/crunchsec/crunch  && mv crunch /data/data/com.termux/files/home" ,"-la"],shell=True)
+        input("FERRAMENTA INSTALADA")
+        python = sys.executable
+        os.execl(python, python, * sys.argv)
+            
     if op4==0:
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -236,6 +241,10 @@ if op==5:
         input("OPÇÃO INVÁLIDA ")
         python = sys.executable
         os.execl(python, python, * sys.argv)
+#tela de contato
+if op==6:
+    print("\n"+" [Twitter]-->@FATCAT"+"\n"+" [Gmail]-->teste1395271@gmail.com"+"\n"+" [facebook]--> https://www.facebook.com/cesarhenriqueabc")
+input("sair...")
 
 #Opção de sair        
 if op==0:

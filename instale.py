@@ -12,7 +12,7 @@ subprocess.call(["apt install wget", "-la"], shell=True)
 
 subprocess.call(["apt install python", "-la"], shell=True)
 
-subprocess.call(["apt install termux-tools", "-la"], shell=True)
+subprocess.call(["termux-tools", "-la"], shell=True)
 
 subprocess.call(["apt install php", "-la"], shell=True)
 
@@ -21,3 +21,5 @@ subprocess.call(["pkg install unstable-repo", "-la"], shell=True)
 subprocess.call(["pkg install coreutils", "-la"], shell=True)
 
 subprocess.call(["apt install curl", "-la"], shell=True)
+
+subprocess.call(["python kith.py", "-la"], shell=True)

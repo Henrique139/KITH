@@ -245,6 +245,8 @@ if op==5:
 if op==6:
     print("\n"+" [Twitter]-->@FATCAT"+"\n"+" [Gmail]-->teste1395271@gmail.com"+"\n"+" [facebook]--> https://www.facebook.com/cesarhenriqueabc")
 input("sair...")
+python = sys.executable
+os.execl(python, python, * sys.argv)
 
 #Opção de sair        
 if op==0:

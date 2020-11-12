@@ -250,8 +250,8 @@ os.execl(python, python, * sys.argv)
 
 #Opção de sair        
 if op==0:
-    input("Saindo...")
-    (exit())
+   input("Saindo...")
+   (exit())
     
 else:
     print(" OPÇÃO INVÁLIDA")        

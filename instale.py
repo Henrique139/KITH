@@ -20,6 +20,4 @@ subprocess.call(["pkg install unstable-repo", "-la"], shell=True)
 
 subprocess.call(["pkg install coreutils", "-la"], shell=True)
 
-subprocess.call(["apt install pearl", "-la"], shell=True)
-
 subprocess.call(["apt install curl", "-la"], shell=True)

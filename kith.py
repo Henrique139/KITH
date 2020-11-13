@@ -9,7 +9,7 @@ import subprocess
 inicio=subprocess.call(["clear","-x"],shell=True)
 verde="\033[1;32m"
 #Título
-print(verde+"  _  __ _  _____"+"\n"+" / |/ // \/__ __\ "+"\n"+" |   / | |  / \ "+"\n"+" |   \ | |  | |"+"\n"+" \_|\_ \\_/  \_/ "+"\n"+"  _     ____  ____  _  __ _____ ____"+"\n"+" / \ /|/  _ \/   _\/ |/ //  __//  __\ "+"\n"+" | |_||| / \||  /  |   / |  \  |  \/|"+"\n"+" | | ||| |-|||  \__|   \ |  /_ |    / "+"\n"+" \_/\| \_/ \|\ ____/\_|\_\\____\ \_/\_\ ")
+print(verde+"  _  __ _  _____"+"\n"+" / |/ // \/__ __\ "+"\n"+" |   / | |  / \ "+"\n"+" |   \ | |  | |"+"\n"+" \_|\_ \\_/  \_/ "+"\n"+"  _     ____  ____  _  __ _____ ____"+"\n"+" / \ /|/  _ \/   _\/ |/ //  __//  __\ "+"\n"+" | |_||| / \||  /  |   / |  \  |  \/|"+"\n"+" | | ||| |-|||  \__|   \ |  /_ |    / "+"\n"+" \_/ \|\_/ \|\ ____/\_|\_\\____\ \_/\_\ ")
 
 print("\n"+"   HENRIQUE CÉSAR,2020  v 1.3"+"\n")
 print("\n"+"  KIT DE HACKING INICIANTE PARA TERMUX"+"\n")
@@ -22,7 +22,7 @@ op=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
 
 #Tela de download de ataque de senha
 if op==1:
-    print("\n"+" [1]-Facebook Brute"+"\n"+" [2]-Hash buster"+"\n"+" [3]-Black-Hydra"+"\n"+" [4]-Instahack"+"\n"+" [5]-ASU"+"\n"+" [6]-Aircrack"+"\n"+" [0]-Voltar")
+    print("\n"+" [1]-Facebook Brute"+"\n"+" [2]-Hash buster"+"\n"+" [3]-Black-Hydra"+"\n"+" [4]-Instahack"+"\n"+" [5]-ASU"+"\n"+" [6]-Aircrack"+"\n"+" [7]-1337Hash"+"\n"+" [0]-Voltar")
     
     op2=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
     
@@ -60,6 +60,12 @@ if op==1:
         
     if op2==6:
         air=subprocess.call(["git clone https://github.com/aircrack-ng/aircrack-ng && mv aircrack-ng /data/data/com.termux/files/home","-la"],shell=True)
+        input("FERRAMENTA INSTALADA")
+        python = sys.executable
+        os.execl(python, python, * sys.argv)
+        
+    if op2==7:
+        h=subprocess.call(["git clone https://github.com/u0pattern/1337Hash && mv 1337Hash /data/data/com.termux/files/home","-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
@@ -168,7 +174,7 @@ if op==3:
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)
-        
+       
     if op4==5:
        pw=subprocess.call(["git clone https://github.com/berzerk0/Probable-Wordlists && mv Probable-Wordlists /data/data/com.termux/files/home" ,"-la"],shell=True)
        input("FERRAMENTA INSTALADA")
@@ -186,9 +192,10 @@ if op==3:
 
 #tela de pishing        
 if op==4:
-    print("\n"+" [1]-SocialSploit"+"\n"+" [2]-SocialFish"+"\n"+" [3]-FishingTool"+"\n"+" [0]-Voltar")  
+    print("\n"+" [1]-SocialSploit"+"\n"+" [2]-SocialFish"+"\n"+" [3]-FishingTool"+"\n"+" [4]-Zphisher"+"\n"+" [0]-Voltar")  
       
     op5=int(input(" SELECIONE UMA OPÇÃO: "))
+    
     if op5==1:
         ss=subprocess.call(["git clone https://github.com/Cesar-Hack-Gray/SocialSploit && mv.SocialSploit /data/data/com.termux/files/home" ,"-la"],shell=True)
         input("FERRAMENTA INSTALADA")
@@ -197,10 +204,6 @@ if op==4:
         
     if op5==2:
         sf=subprocess.call(["git clone https://github.com/UndeadSec/SocialFish && mv SocialFish /data/data/com.termux/files/home","-la"],shell=True)
-    if op5==0:
-        input("VOLTANDO...")
-        python = sys.executable
-        os.execl(python, python, * sys.argv)      
         
     if op5==3:
         ft=subprocess.call(["git clone https://github.com/Vairous7x/V7x-Fishing && mv V7x-Fishing /data/data/com.termux/files/home " ,"-la"],shell=True)
@@ -208,6 +211,22 @@ if op==4:
         python = sys.executable
         os.execl(python, python, * sys.argv)
         
+    if op5==4:
+       zp=subprocess.call(["git clone https://github.com/htr-tech/zphisher && mv zphisher /data/data/com.termux/files/home " ,"-la"],shell=True)
+       input("FERRAMENTA INSTALADA")
+       python = sys.executable
+       os.execl(python, python, * sys.argv)
+        
+    if op5==0:
+        input("VOLTANDO...")
+        python = sys.executable
+        os.execl(python, python, * sys.argv)      
+        
+    else:
+        input(" OPÇÃO INVÁLIDA")
+        python = sys.executable
+        os.execl(python, python, * sys.argv)   
+           
 #tela das ferramentas
 if op==5:
     print("\n"+" [1]-Ngrok"+"\n"+" [2]-Kali"+"\n"+" [3]-Xampp"+"\n"+" [0]-Voltar")            
@@ -241,17 +260,18 @@ if op==5:
         input("OPÇÃO INVÁLIDA ")
         python = sys.executable
         os.execl(python, python, * sys.argv)
+        
 #tela de contato
 if op==6:
     print("\n"+" [Twitter]-->@MRCATFAT"+"\n"+" [Gmail]-->teste1395271@gmail.com"+"\n"+" [facebook]--> https://www.facebook.com/cesarhenriqueabc")
-    input(" ")
+    input("")
     python = sys.executable
     os.execl(python, python, * sys.argv)
 
 #Opção de sair        
 if op==0:
-   input("Saindo...")
-   (exit())
+    input("Saindo...")
+    (exit())
     
 else:
     print(" OPÇÃO INVÁLIDA")        

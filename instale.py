@@ -6,9 +6,9 @@ subprocess.call(["apt update", "-la"], shell=True)
 
 subprocess.call(["apt upgrade", "-la"], shell=True)
 
-subprocess.call(["apt-get upgrade", "-la"], shell=True
-
 subprocess.call(["apt-get update", "-la"], shell=True
+
+subprocess.call(["apt-get upgrade", "-la"], shell=True
 
 subprocess.call(["apt install nano", "-la"], shell=True)
 

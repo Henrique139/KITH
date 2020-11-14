@@ -6,6 +6,10 @@ subprocess.call(["apt update", "-la"], shell=True)
 
 subprocess.call(["apt upgrade", "-la"], shell=True)
 
+subprocess.call(["apt-get upgrade", "-la"], shell=True
+
+subprocess.call(["apt-get update", "-la"], shell=True
+
 subprocess.call(["apt install nano", "-la"], shell=True)
 
 subprocess.call(["apt install wget", "-la"], shell=True)
@@ -21,7 +25,4 @@ subprocess.call(["pkg install unstable-repo", "-la"], shell=True)
 subprocess.call(["pkg install coreutils", "-la"], shell=True)
 
 subprocess.call(["apt install curl", "-la"], shell=True)
-
-subprocess.call(["python kith.py", "-la"], shell=True)
-
 

@@ -6,15 +6,13 @@ subprocess.call(["apt update", "-la"], shell=True)
 
 subprocess.call(["apt upgrade", "-la"], shell=True)
 
-subprocess.call(["apt-get update", "-la"], shell=True
+subprocess.call(["apt-get update", "-la"], shell=True)
 
-subprocess.call(["apt-get upgrade", "-la"], shell=True
+subprocess.call(["apt-get upgrade", "-la"], shell=True)
 
 subprocess.call(["apt install nano", "-la"], shell=True)
 
 subprocess.call(["apt install wget", "-la"], shell=True)
-
-subprocess.call(["apt install python", "-la"], shell=True)
 
 subprocess.call(["termux-tools", "-la"], shell=True)
 

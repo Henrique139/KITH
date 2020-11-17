@@ -233,7 +233,8 @@ if op==5:
     op6=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
 #Downloads
     if op6==1:
-        ft=subprocess.call(["git clone https://github.com/PSecurity/ps.ngrok && mv ps.ngrok /data/data/com.termux/files/home" ,"-la"],shell=True)
+        token=str(input(" DIGITE SEU AUTHTOKEN: "))
+        ft=subprocess.call(["git clone https://github.com/PSecurity/ps.ngrok && mv ps.ngrok /data/data/com.termux/files/home && cd ps.ngrok && chmod +x * && ./ngrok authtoken"+token+" && mv ngrok /data/data/com.termux/files/home && cd && rm -rf ps.ngrok " ,"-la"],shell=True)
         input("FERRAMENTA INSTALADA")
         python = sys.executable
         os.execl(python, python, * sys.argv)

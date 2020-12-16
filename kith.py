@@ -15,7 +15,7 @@ print("\n"+"   HENRIQUE CÉSAR,2020  v 1.3"+"\n")
 print("\n"+"  KIT DE HACKING INICIANTE PARA TERMUX"+"\n")
 
 #Tela inicial
-print(" [1]-Ataque de senha"+"\n"+" [2]-Análise de vulnerabilidade"+"\n"+" [3]-Wordlist"+"\n"+" [4]-Pishing"+"\n"+" [5]-Outros"+"\n"+" [6]-Entre em contato"+"\n"+" [0]-Sair")
+print(" [1]-Ataque de senha"+"\n"+" [2]-Análise de vulnerabilidade"+"\n"+" [3]-Wordlist"+"\n"+" [4]-Pishing"+"\n"+" [5]-Ferramentas"+"\n"+" [6]-DDoS"+"\n"+" [7]-Entre em contato"+"\n"+" [0]-Sair")
 
 #Variável para redirecionar usuário
 op=int(input("\n"+" SELECIONE UMA OPÇÃO: "))
@@ -261,9 +261,25 @@ if op==5:
         input("OPÇÃO INVÁLIDA ")
         python = sys.executable
         os.execl(python, python, * sys.argv)
-        
-#tela de contato
 if op==6:
+    print(" [1]-Xerxes"+"\n"+" [2]-hammer")     
+    op7=int(input(" Selecione uma opção: "))
+    if op7==1:
+        xerxes=subprocess.call(["git clone https://github.com/XCHADXFAQ77X/XERXES && mv XERXES /data/data/com.termux/files/home  " ,"-la"],shell=True)  
+        input("ferramenta instalada")
+        python = sys.executable
+        os.execl(python, python, * sys.argv)
+    if op7==2:
+        hammer=subprocess.call(["git clone https://github.com/cyweb/hammer && mv hammer /data/data/com.termux/files/home  " ,"-la"],shell=True)                         
+        input("ferramenta instalada")      
+        python = sys.executable
+        os.execl(python, python, * sys.argv)
+    else:
+        input("erro")   
+        python = sys.executable
+        os.execl(python, python, * sys.argv)
+#tela de contato
+if op==7:
     print("\n"+" [Twitter]-->@MRCATFAT"+"\n"+" [Gmail]-->teste1395271@gmail.com"+"\n"+" [facebook]--> https://www.facebook.com/cesarhenriqueabc")
     input("")
     python = sys.executable

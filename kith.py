@@ -50,7 +50,7 @@ print('''
  [ 3 ] --> Wordlist
  [ 4 ] --> Pishing 
  [ 5 ] --> Ferramentas
- [ 6 ] --> Dos / DDoS
+ [ 6 ] --> DoS
  [ 0 ] --> Sair
 ''')
 

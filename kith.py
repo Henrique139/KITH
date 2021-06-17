@@ -1,9 +1,13 @@
+#=======Henrique César=======   #
+
 import sys, os
 import subprocess
 from time import sleep
 
 
 os.system('clear')
+
+#funções de finalizar ação e limpart tela
 
 def fin():
     input(' Ação finalizada')
@@ -18,6 +22,8 @@ def limpar():
 
 verde = '\33[1;32m'
 rosa = '\33[1;35m'
+
+#interface inicial
 
 print( verde + '''
 
@@ -38,10 +44,8 @@ print( verde + '''
 
 ''')
 
-print( rosa + '''HENRIQUE CÉSAR, 2021 V 2.0
-Twitter: @MRCATFAT
-
-KIT DE HACKING PARA TERMUX ''' + verde)
+print( rosa + '''HENRIQUE CÉSAR, 2021 V 2.0 \nTwitter: @MRCATFAT
+KIT DE HACKING PARA TERMUX''' + verde)
 
 
 print('''

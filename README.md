@@ -38,3 +38,4 @@ Código totalmente refeito
 item "KALI" removido da aba de ferramentas
 
 item "DOSER" adicionado na aba de DoS
+

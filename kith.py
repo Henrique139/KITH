@@ -243,7 +243,7 @@ if menu == 5:
 
     elif ot == 1:
         token = str(input(" DIGITE SEU AUTHTOKEN: "))
-        subprocess.call(["git clone https://github.com/PSecurity/ps.ngrok && mv ps.ngrok /data/data/com.termux/files/home && cd && cd ps.ngrok && chmod +x * && ./ngrok authtoken" + token, "-la"], shell = True)
+        subprocess.call(["git clone https://github.com/PSecurity/ps.ngrok && mv ps.ngrok /data/data/com.termux/files/home && cd && cd ps.ngrok && chmod +x * && ./ngrok authtoken " + token, "-la"], shell = True)
         fin()
 
     elif ot == 2:
@@ -278,7 +278,7 @@ if menu == 6:
     elif ddos == 3:
         subprocess.call(["git clone https://github.com/Quitten/doser.py  && mv doser.py /data/data/com.termux/files/home " ,"-la"],shell=True)  
         fin()
-        
+
 else:
     print('erro')
     sleep(5)

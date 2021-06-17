@@ -20,7 +20,7 @@ chmod +x *
 
 python kith.py
 
-===========================================================
+====================================================
 
 Essa ferramenta foi criada com o foco em iniciantes do termux .
 

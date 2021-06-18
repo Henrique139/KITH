@@ -169,6 +169,7 @@ if menu == 3:
  [ 3 ] --> Dadoware
  [ 4 ] --> probable wordlist
  [ 5 ] --> Crunch
+ [ 6 ] --> Seclists
  [ 0 ] --> Voltar
  ''')
  
@@ -196,6 +197,9 @@ if menu == 3:
     elif wdl == 5:
         subprocess.call(["git clone https://github.com/crunchsec/crunch  && mv crunch /data/data/com.termux/files/home" ,"-la"],shell=True)
         fin()
+    
+    elif wdl == 6:
+         subprocess.call(["git clone https://github.com/danielmiessler/SecLists && mv SecLists /data/data/com.termux/files/home"])
 
     else:
         print('erro')

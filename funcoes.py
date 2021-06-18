@@ -1,6 +1,8 @@
 #Arquivo com as duas funções
 #usado para separar do script principal
 
+import sys, os
+
 def fin():
     input(' Ação finalizada')
     os.system('clear')

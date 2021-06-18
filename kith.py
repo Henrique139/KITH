@@ -3,27 +3,19 @@
 import sys, os
 import subprocess
 from time import sleep
-
+from funcoes import fin, limpar
 
 os.system('clear')
 
-#funções de finalizar ação e limpart tela
+#funções de finalizar ação e limpar tela
 
-def fin():
-    input(' Ação finalizada')
-    os.system('clear')
-    python = sys.executable
-    os.execl(python, python, * sys.argv)
 
-def limpar():
-    os.system('clear')
-    python = sys.executable
-    os.execl(python, python, * sys.argv)
-
+#cores
 verde = '\33[1;32m'
 rosa = '\33[1;35m'
 
 #interface inicial
+
 
 print( verde + '''
 
@@ -62,6 +54,8 @@ menu = int (input(' Selecione uma opção: '))
 
 if menu == 0:
     (exit())
+
+#Menu ataque de senha
 
 if menu == 1:
     print('''
@@ -115,6 +109,8 @@ if menu == 1:
         sleep(5)
         limpar()
 
+#Menu análise de vulnerabilidade
+
 if menu == 2:
     print(''' [ 1 ] --> Nmap
  [ 2 ] --> Routersploit
@@ -163,6 +159,8 @@ if menu == 2:
         sleep(5)
         limpar()
 
+#Menu wordlists
+
 if menu == 3:
     print(''' [ 1 ] --> Indonesian Wordlist
  [ 2 ] --> BRdumps
@@ -206,6 +204,8 @@ if menu == 3:
         print('erro')
         limpar()
 
+#Menu phishing
+
 if menu == 4:
     print(''' [ 1 ] --> SocialSploit
  [ 2 ] --> SocialFish
@@ -240,6 +240,8 @@ if menu == 4:
         sleep(5)
         limpar()
 
+#Menu ferramentas
+
 if menu == 5:
     print(''' [ 1 ] --> Ngrok
  [ 2 ] --> Xampp
@@ -263,6 +265,8 @@ if menu == 5:
         print('erro')
         sleep(5)
         limpar()
+
+#Menu DoS
 
 if menu == 6:
     print(''' [ 1 ] --> Xerxes

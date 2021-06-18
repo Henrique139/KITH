@@ -199,7 +199,7 @@ if menu == 3:
         fin()
     
     elif wdl == 6:
-         subprocess.call(["git clone https://github.com/danielmiessler/SecLists && mv SecLists /data/data/com.termux/files/home"])
+        subprocess.call(["git clone https://github.com/danielmiessler/SecLists && mv SecLists /data/data/com.termux/files/home"])
 
     else:
         print('erro')

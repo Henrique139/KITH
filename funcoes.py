@@ -1,4 +1,4 @@
-import sys, os
+#Arquivo com as duas funções
 
 def fin():
     input(' Ação finalizada')

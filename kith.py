@@ -166,6 +166,7 @@ if menu == 3:
  [ 4 ] --> probable wordlist
  [ 5 ] --> Crunch
  [ 6 ] --> Seclists
+ [ 7 ] --> wpa2-wordlists
  [ 0 ] --> Voltar
  ''')
  
@@ -196,6 +197,10 @@ if menu == 3:
     
     elif wdl == 6:
         subprocess.call(["git clone https://github.com/danielmiessler/SecLists && mv SecLists /data/data/com.termux/files/home", "-la"], shell=True)
+        fin()
+
+    elif wdl == 7:
+        subprocess.call(["git clone https://github.com/kennyn510/wpa2-wordlists && mv wpa2-wordlists /data/data/com.termux/files/home", "-la"], shell=True)
         fin()
 
     else:
@@ -250,17 +255,17 @@ if menu == 5:
  [ 2 ] --> Xampp
  [ 0 ] --> Voltar
  ''')
-    ot = int (input(' Selecione uma opção: '))
+    fe = int (input(' Selecione uma opção: '))
 
-    if ot == 0:
+    if fe == 0:
         limpar()
 
-    elif ot == 1:
+    elif fe == 1:
         token = str(input(" DIGITE SEU AUTHTOKEN: "))
         subprocess.call(["git clone https://github.com/PSecurity/ps.ngrok && mv ps.ngrok /data/data/com.termux/files/home && cd && cd ps.ngrok && chmod +x * && ./ngrok authtoken " + token, "-la"], shell = True)
         fin()
 
-    elif ot == 2:
+    elif fe == 2:
         subprocess.call(["git clone https://github.com/xampp-phoenix/xampp && mv xampp /data/data/com.termux/files/home" ,"-la"],shell=True)
         fin()
 

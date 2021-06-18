@@ -53,3 +53,4 @@ inst()
 print('===  Iniciando o KITH ===')
 sleep(3)
 subprocess.call(["python kith.py", "-la"],shell=True)
+

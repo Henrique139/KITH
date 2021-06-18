@@ -7,8 +7,6 @@ from funcoes import fin, limpar
 
 os.system('clear')
 
-#funções de finalizar ação e limpar tela
-
 
 #cores
 verde = '\33[1;32m'
@@ -211,6 +209,7 @@ if menu == 4:
  [ 2 ] --> SocialFish
  [ 3 ] --> FishingTool
  [ 4 ] --> Zphisher
+ [ 5 ] --> AdvPhishing
  [ 0 ] --> Voltar 
     ''')
 
@@ -233,6 +232,10 @@ if menu == 4:
 
     elif ps == 4:
         subprocess.call(["git clone https://github.com/htr-tech/zphisher && mv zphisher /data/data/com.termux/files/home " ,"-la"],shell=True)
+        fin()
+
+    elif ps == 5:
+        subprocess.call(["git clone https://github.com/Ignitetch/AdvPhishing && mv AdvPhishing /data/data/com.termux/files/home " ,"-la"],shell=True)
         fin()
 
     else:

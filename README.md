@@ -33,6 +33,6 @@ HENRIQUE CÉSAR
 
 ===Novidades 2.0===
 
-Código totalmente refeito
+ Código totalmente refeito
 
  Novas ferramentas 

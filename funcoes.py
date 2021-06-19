@@ -14,4 +14,4 @@ def limpar():
     python = sys.executable
     os.execl(python, python, * sys.argv)
 
-
+os.system('python kith.py')

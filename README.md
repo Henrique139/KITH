@@ -1,4 +1,5 @@
 # KITH
+
 Kit de ferramentas hacker para termux 
 
 Instalação
@@ -8,7 +9,7 @@ apt update
 
 apt upgrade
 
-apt install python
+pkg install python
 
 apt install git
 
@@ -20,7 +21,7 @@ chmod +x *
 
 python kith.py
 
-====================================================
+===========================================
 
 Essa ferramenta foi criada com o foco em iniciantes do termux .
 
@@ -33,6 +34,6 @@ HENRIQUE CÉSAR
 
 ===Novidades 2.0===
 
- Código totalmente refeito
+Código totalmente refeito
 
- Novas ferramentas 
+Novas ferramentas

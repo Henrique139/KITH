@@ -5,6 +5,7 @@ import subprocess
 from time import sleep
 from funcoes import fin, limpar
 
+
 os.system('clear')
 
 
@@ -13,7 +14,6 @@ verde = '\33[1;32m'
 rosa = '\33[1;35m'
 
 #interface inicial
-
 
 print( verde + '''
 

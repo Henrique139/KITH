@@ -37,3 +37,5 @@ Código totalmente refeito
 Novas ferramentas
 
 correção de erros
+
+itens BlackPhish e SniperPhish adicionados a aba de phishing

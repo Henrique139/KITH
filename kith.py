@@ -34,7 +34,7 @@ print( verde + '''
 
 ''')
 
-print( rosa + '''HENRIQUE CÉSAR, 2021 V 2.1 \nTwitter: @MRCATFAT
+print( rosa + '''HENRIQUE CÉSAR, 2021 V 2.2 \nTwitter: @MRCATFAT
 KIT DE HACKING PARA TERMUX''' + verde)
 
 
@@ -216,6 +216,7 @@ if menu == 4:
  [ 4 ] --> Zphisher
  [ 5 ] --> AdvPhishing
  [ 6 ] --> BlackPhish
+ [ 7 ] --> SniperPhish
  [ 0 ] --> Voltar 
     ''')
 
@@ -246,6 +247,10 @@ if menu == 4:
 
     elif ps == 6:
         subprocess.call(["git clone https://github.com/iinc0gnit0/BlackPhish && mv BlackPhish /data/data/com.termux/files/home " ,"-la"],shell=True)
+        fin()
+
+    elif ps == 7:
+        subprocess.call(["git clone https://github.com/GemGeorge/SniperPhish && mv SniperPhish /data/data/com.termux/files/home " ,"-la"],shell=True)
         fin()
 
     else:

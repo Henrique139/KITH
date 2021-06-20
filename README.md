@@ -35,3 +35,5 @@ HENRIQUE CÉSAR
 Código totalmente refeito
 
 Novas ferramentas
+
+correção de erros

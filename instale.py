@@ -11,7 +11,6 @@ os.system('clear')
 
 print('=== Instalando algumas coisas que podem ser úteis ===')
 
-inst()
 
 print('=== Atualizando Lista de pacotes ===')
 

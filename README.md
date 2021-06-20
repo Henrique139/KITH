@@ -17,8 +17,6 @@ git clone https://github.com/Henrique139/KITH
 
 cd KITH
 
-chmod +x *
-
 python kith.py
 
 ===========================================
@@ -32,7 +30,7 @@ Espero que aproveite .
 
 HENRIQUE CÉSAR 
 
-===Novidades 2.0===
+===Novidades 2.1===
 
 Código totalmente refeito
 

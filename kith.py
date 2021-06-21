@@ -34,7 +34,7 @@ print( verde + '''
 
 ''')
 
-print( rosa + '''HENRIQUE CÉSAR, 2021 V 2.2 \nTwitter: @MRCATFAT
+print( rosa + '''HENRIQUE CÉSAR, 2021 V 3.0 \nTwitter: @MRCATFAT
 KIT DE HACKING PARA TERMUX''' + verde)
 
 
@@ -44,7 +44,7 @@ print('''
  [ 3 ] --> Wordlist
  [ 4 ] --> Pishing 
  [ 5 ] --> Ferramentas
- [ 6 ] --> DoS
+ [ 6 ] --> Coleta de informações
  [ 0 ] --> Sair
 ''')
 
@@ -284,31 +284,38 @@ if menu == 5:
         sleep(5)
         limpar()
 
-#Menu DoS
+#Menu coleta de informações
 
 if menu == 6:
-    print(''' [ 1 ] --> Xerxes
- [ 2 ] --> hammer
- [ 3 ] --> Doser
- [ 0 ] --> Voltar
- ''')
+    print(''' [ 1 ] --> Infoga
+ [ 2 ] --> GasMask
+ [ 3 ] --> AppMetaData
+ [ 4 ] --> ANDROPHSY
+    ''')
 
-    ddos = int (input(' Selecione uma opção: '))
+    co = int (input(' Selecione uma opção: '))
 
-    if ddos == 0:
+    if co == 1:
+        subprocess.call(["git clone https://github.com/m4ll0k/Infoga && mv Infoga /data/data/com.termux/files/home" ,"-la"],shell=True)
+        fin()
+
+    elif co == 2:
+        subprocess.call(["git clone https://github.com/twelvesec/gasmask && mv gasmask /data/data/com.termux/files/home" ,"-la"],shell=True)
+        fin()
+
+    elif co == 3:
+        subprocess.call(["git clone https://github.com/Microsoft/app-metadata && mv app-metadata /data/data/com.termux/files/home" ,"-la"],shell=True)
+        fin()
+    
+    elif co == 4:
+        subprocess.call(["git clone https://github.com/scorelab/ANDROPHSY && mv ANDROPHSY /data/data/com.termux/files/home" ,"-la"],shell=True)
+        fin()
+
+    else:
+        print('erro')
+        sleep(5)
         limpar()
 
-    elif ddos == 1:
-        subprocess.call(["git clone https://github.com/XCHADXFAQ77X/XERXES && mv XERXES /data/data/com.termux/files/home  " ,"-la"],shell=True)  
-        fin()
-
-    elif ddos == 2:
-        subprocess.call(["git clone https://github.com/cyweb/hammer && mv hammer /data/data/com.termux/files/home  " ,"-la"],shell=True)           
-        fin()
-
-    elif ddos == 3:
-        subprocess.call(["git clone https://github.com/Quitten/doser.py  && mv doser.py /data/data/com.termux/files/home " ,"-la"],shell=True)  
-        fin()
 
 else:
     print('erro')

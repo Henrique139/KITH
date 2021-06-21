@@ -291,6 +291,7 @@ if menu == 6:
  [ 2 ] --> GasMask
  [ 3 ] --> AppMetaData
  [ 4 ] --> ANDROPHSY
+ [ 0 ] --> Sair
     ''')
 
     co = int (input(' Selecione uma opção: '))
@@ -310,6 +311,9 @@ if menu == 6:
     elif co == 4:
         subprocess.call(["git clone https://github.com/scorelab/ANDROPHSY && mv ANDROPHSY /data/data/com.termux/files/home" ,"-la"],shell=True)
         fin()
+
+    elif co == 0:
+        limpar()
 
     else:
         print('erro')

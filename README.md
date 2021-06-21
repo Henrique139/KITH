@@ -30,9 +30,10 @@ Espero que aproveite .
 
 HENRIQUE CÉSAR 
 
-===Novidades 2.1===
+===Novidades 3.0===
 
 correção de erros
 
-itens BlackPhish e SniperPhish adicionados a aba de phishing
+Aba de DoS removida
 
+Aba de coleta de informações adicionada
